@@ -1,0 +1,13 @@
+.heading{
+    font-size:30px;
+    font-weight: bolder;
+    text-align: center;
+    color: #e8a808f5;
+}
+.line{
+    border: 1px solid red;
+    line-height: 50px;
+}
+body{  
+    background-color: #d0ecf3;
+  } 
