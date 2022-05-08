@@ -1,0 +1,12 @@
+.box{
+    width: 252px;
+    height: 400px;
+    margin:20px;
+    border: 1px solid gray;
+    color: gray;
+    text-align: center;
+    
+}
+.flex{
+  display: flex;
+}
