@@ -1,0 +1,82 @@
+.submit-register{
+    margin-right: 20px;
+}
+
+form{
+    margin-top:30px;
+}
+
+.fa-address-book-o{
+    font-size: 40px !important;
+    color:orange;
+}
+
+.img-about{
+    width: 100%;
+    height:50%;
+}
+
+.btn-warning{
+    border-radius: 23px;
+}
+.image{
+    background-image: url('lib.jpg');
+    width: 50px;
+    height: 50px;
+  }
+  .heading{
+    background-color: #f7f3ee;
+    width: 535px;
+    height: 414px;
+    padding-top: 100px;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 5%;
+  }
+  .book{
+    width: 80px;
+    height: 91px;
+    margin-right: 371px;
+    margin-top: -90px;
+
+  }
+ 
+  .username{
+    margin-top: 39px;
+    margin-left: 10px;
+    
+  }
+  .password{
+   
+    margin-left: 15px;
+    margin-top: 41px;
+    
+  }
+  .fa-search-plus{
+   
+    margin-left: 10px;
+    
+  }
+
+.btn-success{
+    margin-top: 77px;
+    margin-top: 28px;
+    Height: 53px;
+    font-size: initial;
+}
+.libimage{
+  width: 100%;
+  
+}
+.Library{
+  margin-top: -113px;;
+  color: #fdfbf8;
+
+
+}
+.Library1{
+  margin-top:5px;
+  color: #f7f3ee;
+}
