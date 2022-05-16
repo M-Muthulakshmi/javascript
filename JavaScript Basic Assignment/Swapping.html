@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Swapp</title>
+    <sytle><link rel="stylesheet" href="global.css"></sytle>
+<h1><u>SWAP TWO VARIABLES</u></h1>
+</head>
+<body class="Number">
+    Value of A: <input id="first">
+    Value of B: <input id="second"></br></br>
+    <button onclick="swap()">SWAP VARIABLES</button></br></br>
+    <h3><u>Swapped Output</u></h3>
+    Value of A: <input id="Number1">
+    Value of B: <input id="Number2">
+</body>
+<script>
+    function swap() {
+        var a, b, c;
+        a = Number(document.getElementById("first").value);
+        b = Number(document.getElementById("second").value);
+        c = a;
+        a = b;
+        b = c;
+        document.getElementById("Number1").value = a;
+        document.getElementById("Number2").value = b;
+    }
+</script>
+
+</html>

@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Largest Among Three Numbers</title>
+    <sytle><link rel="stylesheet" href="global.css"></sytle>
+<h1><u>Largest Among Three Numbers</u></h1>
+</head>
+  <body class="Number">
+    <p>Enter First Number:&nbsp; &nbsp; &nbsp; &nbsp;<input type ="text" name = "text" id="firstN"></p>
+
+    <p>Enter Secound Number:&nbsp;<input type ="text" name = "text" id="secoundN"></p>
+
+    <p>Enter Third Number:&nbsp; &nbsp; &nbsp; &nbsp;<input type ="text" name = "text" id="thirdN"></p>
+
+    <p><button onclick="max_of_three()">Get Result</button></p>
+    <div> &nbsp;</div>
+
+    <p id="result"></p>
+</body>
+
+    <script>
+      function max_of_three(){
+        let firstNumber = document.getElementById('firstN').value;
+
+        let secoundNumber = document.getElementById('secoundN').value;
+
+        let thirdNumber = document.getElementById('thirdN').value;
+
+        let max_val = 0;
+
+        if (firstNumber > secoundNumber){
+          max_val = firstNumber;
+        }
+        else{
+          max_val = secoundNumber;
+        }
+        if (thirdNumber > max_val){
+          max_val = thirdNumber;
+        }
+        document.getElementById("result").innerHTML ="Largest Among Three Numbers : "+ max_val;
+        console.log('Largest Integer of Three Given Integer is '+ max_val);
+      }
+    </script>
+  
+</html>

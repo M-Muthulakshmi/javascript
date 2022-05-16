@@ -1,0 +1,30 @@
+<html>
+
+<head>
+
+<body class="Number"></body>
+<sytle>
+  <link rel="stylesheet" href="global.css">
+</sytle>
+<h1><u>ODD or EVEN</u></h1>
+
+</body>
+
+Enter a number: <input type="number" id="num" name="num"  />
+<div> &nbsp;</div>
+<input type="button" value="Find Odd or Even" onclick="findOddEven()" name="find" />
+<div id="result"></div>
+
+<script>
+  function findOddEven() {
+    var num = document.getElementById('num').value;
+    if (num % 2 == 0) {
+      document.getElementById('result').innerHTML = num + ' is an Even number';
+    } else {
+      document.getElementById('result').innerHTML = num + ' is an Odd number';
+    }
+  }        
+</script>
+</head>
+
+</html>

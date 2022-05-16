@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Area of Triangle</title>
+</head>
+<sytle><link rel="stylesheet" href="global.css"></sytle>
+<h1><u>AREA OF THE TRIANGLE</u></h1>
+<body class="Number">
+
+    <div>Enter Base of the Triangle : &nbsp; <input type="text" id="base"></div>
+    <div> &nbsp;</div>
+    <div>Enter Height of the Triangle: <input type="text" id="height"></div>
+    <div> &nbsp;</div>
+    <button onclick="area()">Area Of The Triangle</button>
+    <div> &nbsp;</div>
+    <div>Area of the Triangle is:<span id="area"></span></div>
+</body>
+
+</html>
+<script>
+    function area() {
+        var base = document.getElementById("base").value;
+        var height = document.getElementById("height").value;
+        var trianglearea = (Number(base) * Number(height)) / 2;
+        document.getElementById("area").innerHTML = trianglearea;
+    }
+</script>
+
+

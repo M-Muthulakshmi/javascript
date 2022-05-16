@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>ADD NUMBER</title>
+</head>
+<sytle><link rel="stylesheet" href="global.css"></sytle>
+<h1><u>ADDITION OF NUMBER</u></h1>
+<body class="Number">
+    Enter Number 1  : <input type="text" id="one"/>
+    <div> &nbsp;</div>
+    Enter Number 2  : <input type="text" id="two"/>
+    <div> &nbsp;</div>
+    <button onClick="addition()">Add</button>
+    <div> &nbsp;</div>
+    <div>Result:<span id="add"></span></div>
+</body>
+<script>
+    function addition() {
+        var a = document.getElementById("one").value;
+        var b = document.getElementById("two").value;
+        var result = Number(a) + Number(b);
+        document.getElementById("add").innerHTML = result;
+    }
+    console.log("1" + "2");
+</script>
+
+</html>
