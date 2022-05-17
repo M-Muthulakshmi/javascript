@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <sytle>
+        <link rel="stylesheet" href="global.css">
+    </sytle>
+    <h1><u>BMI Calculation</u></h1>
+</head>
+
+<body class="Number">
+    <div>
+        Enter the Mass of Harry: &nbsp;&nbsp;&nbsp;
+        <input type="text" id="mass1">
+    </div><br />
+    <div> Enter the Height of Harry:&nbsp;&nbsp;
+        <input type="text" id="height1">
+    </div><br />
+    <div>
+        Enter the Mass of Salman:&nbsp;&nbsp;
+        <input type="text" id="mass2">
+    </div><br />
+    <div> Enter the Height of Salman:
+        <input type="text" id="height2">
+    </div><br />
+    <button onClick="BMICalculation()">CALCULATE BMI</button><br /><br />
+    <p id="result"></p>
+</body>
+<script>
+
+function BMICalculation(){
+    let Harimass = document.getElementById("mass1").value;
+    let Hariheight = document.getElementById("height1").value;
+    let Salmanmass = document.getElementById("mass2").value;
+    let Salmanheight = document.getElementById("height2").value;
+    var HariBmi = Harimass / (Hariheight * Hariheight);
+    let SalmanBmi = Salmanmass / (Salmanheight * Salmanheight);
+    let bool = true;
+    if(HariBmi > SalmanBmi){
+        bool = false;
+        document.getElementById("result").innerHTML ="Harry's BMI is higher than Salman";
+        console.log(bool);
+    }
+    else if(HariBmi < SalmanBmi){
+        document.getElementById("result").innerHTML ="Salman's BMI is higher than Harry";
+        console.log(bool);
+    }
+    else{
+        document.getElementById("result").innerHTML ="The BMI of Hari and Salman are same";
+    }
+}
+
+</script>
+
+</html>
