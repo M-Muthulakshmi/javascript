@@ -1,0 +1,30 @@
+<html>
+<sytle>
+    <link rel="stylesheet" href="Global.css">
+</sytle>
+<h1><u>Reverse String</u></h1>
+<div>
+    Enter the string: &nbsp;&nbsp;&nbsp;
+    <input type="text" id="input" value="salman">
+</div><br />
+<div>
+    <button onClick="ReverseString()">CHECK</button>
+</div>
+<p id="result"></p>
+</head>
+
+
+<body class="Number">
+
+    <script>
+
+        function ReverseString() {
+            var string = document.getElementById("input").value;
+            var Result = string.split('').reverse().join('');
+            document.getElementById("result").innerHTML ="Output is : "+Result;
+        }
+    </script>
+</body>
+
+</html>
+

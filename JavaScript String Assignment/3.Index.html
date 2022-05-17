@@ -1,0 +1,34 @@
+<html>
+<sytle>
+    <link rel="stylesheet" href="Global.css">
+</sytle>
+<h1><u>Find Index</u></h1>
+<div>
+    Enter the string: &nbsp;&nbsp;&nbsp;
+    <input type="text" id="name" value="Computer">
+</div><br />
+<div>
+    Enter a number: &nbsp;&nbsp;&nbsp;
+    <input type="text" id="index" value="2">
+</div><br />
+<div>
+    <button onClick="index()">INDEX</button>
+</div>
+<p id="result"></p>
+</head>
+
+
+<body class="Number">
+
+    <script>
+
+        function index() {
+            var str = document.getElementById("name").value;
+            var index = Number(document.getElementById("index").value);
+            var char = str.charAt(index);
+            document.getElementById("result").innerHTML = char;
+        }
+    </script>
+</body>
+
+</html>

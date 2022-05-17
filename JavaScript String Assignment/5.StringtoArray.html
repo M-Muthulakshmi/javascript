@@ -1,0 +1,31 @@
+<html>
+<sytle>
+    <link rel="stylesheet" href="Global.css">
+</sytle>
+<h1><u>String TO Array</u></h1>
+<div>
+    Enter the string: &nbsp;&nbsp;&nbsp;
+    <input type="text" id="input" value="string">
+</div><br />
+<div>
+    <button onClick="StringIntoArray()">CHECK</button>
+</div>
+<p id="result"></p>
+</head>
+
+
+<body class="Number">
+
+    <script>
+
+        function StringIntoArray() {
+            var string = document.getElementById("input").value;
+            var Result = string.split('');
+            document.getElementById("result").innerHTML ="Output is : "+"["+Result+"]";
+        }
+    </script>
+</body>
+
+</html>
+
+

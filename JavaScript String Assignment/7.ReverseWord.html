@@ -1,0 +1,32 @@
+<html>
+<sytle>
+    <link rel="stylesheet" href="Global.css">
+</sytle>
+<h1><u>Reverse Word</u></h1>
+<div>
+    Enter the string: &nbsp;&nbsp;&nbsp;
+    <input type="text" id="input" value="Programming is great">
+</div><br />
+<div>
+    <button onClick="ReverseWord()">CHECK</button>
+</div>
+<p id="result"></p>
+</head>
+
+
+<body class="Number">
+
+    <script>
+
+        function ReverseWord() {
+            var string = document.getElementById("input").value;
+            var Result = string.split(" ").map(s => s.split("").reverse().join("")).join(" ");
+            document.getElementById("result").innerHTML ="Output is : "+Result;
+        }
+    </script>
+</body>
+
+</html>
+
+
+

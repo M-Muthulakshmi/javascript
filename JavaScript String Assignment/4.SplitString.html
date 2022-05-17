@@ -1,0 +1,31 @@
+<html>
+<sytle>
+    <link rel="stylesheet" href="Global.css">
+</sytle>
+<h1><u>Split the String</u></h1>
+<div>
+    Enter the string: &nbsp;&nbsp;&nbsp;
+    <input type="text" id="input" value="Details">
+</div><br />
+<div>
+    <button onClick="Splitstring()">CHECK</button>
+</div>
+<p id="result"></p>
+</head>
+
+
+<body class="Number">
+
+    <script>
+
+        function Splitstring() {
+            var str = document.getElementById("input").value;
+            var Result = str.slice(1,4);
+            document.getElementById("result").innerHTML ="Output is : "+Result;
+        }
+    </script>
+</body>
+
+</html>
+
+

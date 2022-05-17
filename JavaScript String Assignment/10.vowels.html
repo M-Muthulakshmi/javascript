@@ -1,0 +1,37 @@
+<html>
+<sytle>
+    <link rel="stylesheet" href="Global.css">
+</sytle>
+<h1><u>Find the Vowels</u></h1>
+<div>
+    Enter the string: &nbsp;&nbsp;&nbsp;
+    <input type="text" id="input">
+</div><br />
+<div>
+    <button onClick="Vowels()">CHECK</button>
+</div>
+<p id="result"></p>
+</head>
+
+
+<body class="Number">
+
+    <script>
+
+        function Vowels() {
+            var string = document.getElementById("input").value;
+            var Result = string.split('');
+            for (var i = 0; i < Result.length; i++) {
+                if (string.charAt(i) == 'a' || string.charAt(i) == 'e' || string.charAt(i) == 'i' || string.charAt(i) == 'o' || string.charAt(i) == 'u') {
+                    document.getElementById("result").innerHTML = "Vowels is: "+Result[i];
+                }
+            }
+
+        }
+    </script>
+</body>
+
+</html>
+
+
+

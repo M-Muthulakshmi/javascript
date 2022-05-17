@@ -1,0 +1,43 @@
+<html>
+<sytle>
+    <link rel="stylesheet" href="Global.css">
+</sytle>
+<h1><u>Palindrome Or Not </u></h1>
+<div>
+    Enter the string: &nbsp;&nbsp;&nbsp;
+    <input type="text" id="input">
+</div><br />
+<div>
+    <button onClick="Palindrome()">CHECK</button>
+</div>
+<p id="result"></p>
+</head>
+
+
+<body class="Number">
+
+    <script>
+
+        function Palindrome() {
+            var string = document.getElementById("input").value;
+            var result = string;
+            var Result = result.split('').reverse().join('');
+            var bool = true;
+            if (Result == string) {
+                document.getElementById("result").innerHTML = "The Given String is a Palindrome : " + bool;
+        }
+        else{
+            bool = false;
+            document.getElementById("result").innerHTML = "The Given String is not a Palindrome ";
+        }
+
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+

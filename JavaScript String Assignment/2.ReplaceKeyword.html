@@ -1,0 +1,27 @@
+<html>
+<sytle>
+    <link rel="stylesheet" href="Global.css">
+</sytle>
+<h1><u>Replace Keyword</u></h1>
+<div>
+    The Given String is: &nbsp;&nbsp;&nbsp;
+    <input type="text" id="name" value="This is new programming">
+    </div><br />
+    <div>
+    <button onClick="ReplaceKeyword()">ReplaceKeyword</button>
+</div>
+    <p id="result"></p>
+    </head>
+
+    <body class="Number">
+
+        <script>
+
+            function ReplaceKeyword() {
+                var str = document.getElementById("name").value;
+                var strReplace = str.replace("programming", "language");
+                document.getElementById("result").innerHTML = "Replaced string is: " + strReplace;
+            }
+        </script>
+    </body>
+    </htm
