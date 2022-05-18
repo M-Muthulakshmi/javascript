@@ -1,0 +1,24 @@
+<html>
+
+
+<h1><u>Print Array using For loop</u></h1>
+
+<body>
+    <div>
+        Enter the Input: &nbsp;&nbsp;&nbsp;
+        <input type="text" id="input"value="[33, 44, 11, 33, 44, 555, 11, 11, 45]">
+    </div><br />
+    <button onClick="array()">CHECK</button>
+    <p id="result"></p>
+    </head>
+</body>
+<script>
+    function array() {
+        var input = document.getElementById("input").value;
+        for (var i = 0; i < input.length; i++) {
+            document.getElementById("result").innerHTML = "Array output:" + input;
+        }
+    }
+</script>
+
+</html>
