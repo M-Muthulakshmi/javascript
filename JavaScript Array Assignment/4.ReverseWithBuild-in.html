@@ -1,0 +1,20 @@
+<html>
+    <h1><u>Reverse Using Build-In Function</u></h1>
+    <body>
+        <div>
+            Enter the Input: &nbsp;&nbsp;&nbsp;
+            <input type="text" id="input"value="33, 44, 11, 33, 44, 555, 11, 11, 45">
+        </div><br />
+        <button onClick="array()">CHECK</button>
+        <p id="result"></p>
+        </head>
+    </body>
+
+</html>
+<script>
+    function array() {
+        var res = document.getElementById("input").value; 
+        var output = res.split(","); 
+        document.getElementById("result").innerHTML = "Output is : " + "["+output.reverse()+"]"; 
+    }
+</script>
