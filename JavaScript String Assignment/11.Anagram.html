@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <sytle>
+            <link rel="stylesheet" href="Global.css">
+        </sytle>
+        <h1><u>Maximum character</u></h1>
+    
+    <body class="Number">
+        <div>
+            Enter the string: &nbsp;&nbsp;&nbsp;
+            <input type="text" id="input1" value="Salman">
+        </div><br />
+        <div>
+            Enter the string: &nbsp;&nbsp;&nbsp;
+            <input type="text" id="input2" value="name">
+        </div><br />
+        <div>
+            <button onClick="Anagram()">CHECK</button>
+        </div>
+        <p id="result"></p>
+    
+    </body>
+    </head>
+
+<script>
+function Anagram()
+{
+    var input1=document.getElementById("input1").value;
+    var input2=document.getElementById("input2").value;
+    var Res1=input1.length;
+    var Res2=input2.length;
+    if(Res1!=Res2)
+    {
+    document.getElementById("result").innerHTML = "Different:";
+    }
+    var output1=input1.split("").sort().join("");
+    var output2=input2.split("").sort().join("");
+    if(output1===output2)
+    {
+        document.getElementById("result").innerHTML = "The output is an Anagram";
+    }
+    else
+    {
+        document.getElementById("result").innerHTML = "The output is not an Anagram";
+
+    }
+
+}    
+</script>
+    </html>

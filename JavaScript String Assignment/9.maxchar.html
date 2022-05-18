@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <sytle>
+        <link rel="stylesheet" href="Global.css">
+    </sytle>
+    <h1><u>Maximum character</u></h1>
+
+<body class="Number">
+    <div>
+        Enter the string: &nbsp;&nbsp;&nbsp;
+        <input type="text" id="input" value="Programming">
+    </div><br />
+    <div>
+        <button onClick="Max()">CHECK</button>
+    </div>
+    <p id="result"></p>
+
+</body>
+
+<script>
+
+    function Max() {
+        var str = document.getElementById("input").value;
+        var max = str.toLowerCase().split('').sort();
+        var maxcount = 0, Result;
+        var count = 1;
+        var length = max.length;
+        for (var i = 1; i <= length; i++) {
+            if ((i == length) || (max[i] != max[i - 1])) {
+                if (maxcount <= count) {
+                    maxcount = count;
+                    Result = max[i];
+                    if (count = 2) {
+                        document.getElementById("result").innerHTML = "Maximum occurring character is :" + Result;
+                        break;
+                    }
+                }
+
+            }
+        }
+
+    }
+</script>
+</head>
+
+</html>
