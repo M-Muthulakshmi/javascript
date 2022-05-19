@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1><u>Ascendind Without using Build - In</u></h1>
+
+    <div>
+        <p>Given Array: [33,44,11,33,44,555,11,11,45] </p>
+        <p id="result"></p>
+</body>
+
+<script>
+    var Arr = [33, 44, 11, 33, 44, 555, 11, 11, 45];
+    for (var i = 1; i < Arr.length; i++)
+        for (var j = 0; j < i; j++)
+            if (Arr[i] < Arr[j]) {
+                var x = Arr[i];
+                Arr[i] = Arr[j];
+                Arr[j] = x;
+            }
+    document.getElementById("result").innerHTML = "Output is:" + Arr;
+
+</script>
+
+</body>
+
+</html>

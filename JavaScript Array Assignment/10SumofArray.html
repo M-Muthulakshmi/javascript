@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <body>
+
+    <h1><u>Sum of Array</u></h1>
+    <div>
+        <p>Given Array: [33,44,20,10] </p>
+        <p id="result"></p>
+</body>
+</head>
+<script>
+    var array = [33,44,20,10];
+    
+    var sum = array.reduce(function(a, b){
+        return a + b;
+    }, 0);
+    document.getElementById("result").innerHTML = "Sum of Array is :" +  sum ;
+</script>
+
+</html>

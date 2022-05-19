@@ -1,0 +1,12 @@
+<html>
+<h1><u>Total in chunks of two</u></h1>
+<p>Given Array: [33, 44, 20, 11] </p>
+</html>
+<script>
+    var array = [33, 44, 20, 11];
+    var chunks = 2;
+    for (var i = 0; i < array.length; i += chunks) {
+        var temp = array.slice(i, i + chunks);
+        document.write("[" + temp + "]");
+    }        
+</script>
