@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <h1><u>Find Palindrome in Given Array</u></h1>
+<body>
+ <div>
+    Given Input is: <input type="text" id="input" value="22,3,4,21,45,77,34">
+</div>
+<div>
+    <input type="button" value="Palindrome" onclick="Palindrome()">
+</div>
+</body>
+</head>
+<script>
+    function Palindrome() {
+        var input = document.getElementById("input").value;
+        var a = input.split(",");
+        for (var i = 0; i < a.length; i++) {
+            var result = a[i];
+            var output = result.toString().split('').reverse().join('');
+            var bool = true;
+            if (output == a[i]) {
+                console.log(a[i]);
+            }
+        }
+    }
+</script>
+
+</html>
