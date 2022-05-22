@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <h1><u>Sub Array </u></h1>
+<div>
+    Enter the string: &nbsp;&nbsp;&nbsp;
+    <input type="text" id="input"value="[2,3,4,5,6,0,2,2,3,-1,4,5,3]">
+</div><br />
+<div>
+    <button onClick="array()">CHECK</button>
+</div>
+<p id="result"></p>
+</head>
+    <script>
+        function array(){
+        var input = [2,3,4,5,6,0,2,2,3,-1,4,5,3];
+        var j = input.length;
+        for(var i=0; i<j; i++){
+            if(input[i]<=0){
+            var output = input.slice(0,i);
+            input = input.slice(i+1,j);
+            i = 0;
+            for (i=0; i<output.length;i++){
+            output[i]=output[i];
+                console.log(output);
+                document.getElementById("result").innerHTML = output;
+                break;
+            }
+
+        }
+    }
+        }
+    </script>
+
+</html>
